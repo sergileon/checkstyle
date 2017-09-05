@@ -269,6 +269,7 @@ public class AllChecksTest extends AbstractModuleTestSupport {
                 final int[] acceptableTokens = testedCheck.getAcceptableTokens();
 
                 if (!isSubset(defaultTokens, acceptableTokens)) {
+                    isSubset(defaultTokens, acceptableTokens);
                     final String errorMessage = String.format(Locale.ROOT,
                             "%s's default tokens must be a subset"
                             + " of acceptable tokens.", check.getName());

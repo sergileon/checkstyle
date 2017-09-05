@@ -78,7 +78,8 @@ import com.puppycrawl.tools.checkstyle.utils.CommonUtils;
  *  {@link TokenTypes#STAR STAR},
  *  {@link TokenTypes#STAR_ASSIGN STAR_ASSIGN},
  *  {@link TokenTypes#LITERAL_ASSERT LITERAL_ASSERT},
- *  {@link TokenTypes#TYPE_EXTENSION_AND TYPE_EXTENSION_AND}.
+ *  {@link TokenTypes#TYPE_EXTENSION_AND TYPE_EXTENSION_AND},
+ *  {@link TokenTypes#ELLIPSIS ELLIPSIS}
  *
  * <p>An example of how to configure the check is:
  *
@@ -246,6 +247,7 @@ public class WhitespaceAroundCheck extends AbstractCheck {
             TokenTypes.STAR_ASSIGN,
             TokenTypes.LITERAL_ASSERT,
             TokenTypes.TYPE_EXTENSION_AND,
+            TokenTypes.ELLIPSIS
         };
     }
 
@@ -307,6 +309,7 @@ public class WhitespaceAroundCheck extends AbstractCheck {
             TokenTypes.WILDCARD_TYPE,
             TokenTypes.GENERIC_START,
             TokenTypes.GENERIC_END,
+            TokenTypes.ELLIPSIS
         };
     }
 
